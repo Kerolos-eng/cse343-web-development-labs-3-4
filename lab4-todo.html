@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5fb">
+  <title>Daybook | Lab 4 Task Manager</title>
+  <link rel="stylesheet" href="lab4-todo.css">
+  <script src="lab4-todo.js" defer></script>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="brand-row">
+      <div class="brand-icon" aria-hidden="true">d.</div>
+      <div><p class="brand-name">DAYBOOK</p><p class="brand-caption">MAKE ROOM FOR WHAT MATTERS</p></div>
+      <div class="date-chip" id="today"></div>
+    </header>
+
+    <section class="hero">
+      <div><p class="eyebrow">YOUR DAILY SPACE</p><h1>A little progress<br><span>goes a long way.</span></h1></div>
+      <div class="progress-ring" aria-label="Completion progress"><span id="progress-value">0%</span><small>DONE</small></div>
+    </section>
+
+    <section class="todo-card" aria-labelledby="list-title">
+      <div class="card-heading"><div><p class="eyebrow">THE CHECKLIST</p><h2 id="list-title">Today’s focus</h2></div><span id="count-badge" class="count-badge">0 TASKS</span></div>
+      <form id="todo-form" class="add-form">
+        <label class="sr-only" for="todo-input">Add a task</label>
+        <span class="plus-icon" aria-hidden="true">+</span>
+        <input id="todo-input" name="task" type="text" maxlength="120" placeholder="What would you like to get done?" autocomplete="off" required>
+        <button type="submit" class="add-button">Add task <span aria-hidden="true">↗</span></button>
+      </form>
+      <div class="list-toolbar"><p class="helper">Click or double-click a task to edit it. Press Enter to save.</p>
+        <nav class="filters" aria-label="Filter tasks">
+          <button class="filter active" data-filter="all" aria-pressed="true">All <span id="all-count">0</span></button>
+          <button class="filter" data-filter="active" aria-pressed="false">Active</button>
+          <button class="filter" data-filter="completed" aria-pressed="false">Done</button>
+        </nav>
+      </div>
+      <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+      <div id="empty-state" class="empty-state"><span aria-hidden="true">✦</span><strong>Your list is clear.</strong><small>Add a task above to get started.</small></div>
+      <footer class="list-footer"><p id="remaining">0 tasks left</p><div class="footer-actions"><button id="clear-completed" class="text-button">Clear completed</button><button id="clear-all" class="text-button danger">Clear all</button></div></footer>
+    </section>
+    <p class="page-note">A small, focused task list — saved automatically on this device.</p>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

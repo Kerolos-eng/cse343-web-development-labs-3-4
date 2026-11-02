@@ -1,40 +1,22 @@
 # CSE343 Web Development — Labs 3 & 4
 
-
-
-Two browser-based JavaScript projects for the Lab 3 calculator and Lab 4 to-do task.
-
-
-
-**Repository:** https://github.com/Kerolos-eng/cse343-web-development-labs-3-4
-
-
+Code repository for the Lab 3 calculator and Lab 4 task manager.
 
 ## Lab 3 — Orbit Calculator
+- `lab3-calculator.html`
+- `lab3-calculator.css`
+- `lab3-calculator.js`
 
-Responsive calculator with addition, subtraction, multiplication, division, decimals, percent, sign toggle, clear, keyboard input, and division-by-zero handling.
-
-
+Open `lab3-calculator.html` in a browser.
 
 ## Lab 4 — Daybook Task Manager
+- `lab4-todo.html`
+- `lab4-todo.css`
+- `lab4-todo.js`
 
-Create, complete, filter, edit, and delete tasks; clear completed/all tasks; progress and remaining counts; browser persistence using localStorage.
+Open `lab4-todo.html` in a browser. Tasks persist in localStorage.
 
+## Submission materials
+`SUBMISSION_REPORT.pdf` contains the required screenshots and report. `SUBMISSION_REPORT.md` is its source. Browser tests are recorded in `BROWSER_TESTS.txt`. `CSE343_Labs_3_4_Submission.zip` preserves the project directory structure and includes the full deliverables.
 
-
-## Source files
-
-- `lab3-calculator/index.html`, `styles.css`, `app.js`
-- 
-- `lab4-todo/index.html`, `styles.css`, `app.js`
-- 
-
-
-## Run
-
-Open either `index.html` directly in a modern browser. No packages or build step are needed. Alternatively run `python3 -m http.server 8000` from the project directory and open `/lab3-calculator/` or `/lab4-todo/`.
-
-
-
-The submission report PDF, screenshot evidence, and browser test results are included in the downloadable ZIP deliverable.
-
+Student name, ID, and section fields in the report must be completed before final submission.
